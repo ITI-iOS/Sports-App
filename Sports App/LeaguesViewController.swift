@@ -16,6 +16,7 @@ class LeaguesViewController: UIViewController {
         super.viewDidLoad()
         leaguesTableView.dataSource = self
         leaguesTableView.delegate = self
+        self.navigationItem.title = "Leagues"
         getData { myLeague in
             DispatchQueue.main.async {
                 let league = myLeague?.data

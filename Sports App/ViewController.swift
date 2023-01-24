@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         sportsView.delegate = self
         sportsView.dataSource = self
+        self.navigationItem.title = "Sports"
         getData(completionHandler: { mySport in
             DispatchQueue.main.async {
                 let sports = mySport?.data
@@ -52,7 +53,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 175, height: 180)
+        return CGSize(width: (UIScreen.main.bounds.width/2) - 22, height: (UIScreen.main.bounds.width/2) - 22)
     }
 }
 
