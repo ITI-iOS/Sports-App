@@ -126,7 +126,7 @@
                                             <outlet property="leagelLabel" destination="ZM9-nO-0jc" id="viu-3B-D0t"/>
                                             <outlet property="leagueImage" destination="xcb-Ja-PrS" id="4te-yM-LZU"/>
                                             <outlet property="videoBtn" destination="tJA-pg-pKm" id="Je8-H0-vHR"/>
-                                            <segue destination="T0N-w8-iDp" kind="show" id="mRQ-d7-dHu"/>
+                                            <segue destination="T0N-w8-iDp" kind="show" id="fpa-JE-UZC"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
