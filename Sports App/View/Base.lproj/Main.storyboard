@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qmt-Vc-ThU">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qmt-Vc-ThU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -14,7 +15,7 @@
             <objects>
                 <viewController title="Sports" id="h6j-ub-kqx" customClass="ViewController" customModule="Sports_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kpr-xR-JVI">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Kzo-D6-9rA">
@@ -79,7 +80,7 @@
             <objects>
                 <viewController storyboardIdentifier="leagues" title="Leagues" id="Pzs-yc-0pe" customClass="LeaguesViewController" customModule="Sports_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HAE-LD-Bu1">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="R9S-i1-Bg5">
@@ -88,7 +89,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="leagueCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="leagueCell" rowHeight="90" id="Eim-eV-yrb" customClass="CustomLeagueTCell" customModule="Sports_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="361" height="90"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="361" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Eim-eV-yrb" id="TAx-68-M44">
                                             <rect key="frame" x="0.0" y="0.0" width="361" height="90"/>
@@ -125,6 +126,7 @@
                                             <outlet property="leagelLabel" destination="ZM9-nO-0jc" id="viu-3B-D0t"/>
                                             <outlet property="leagueImage" destination="xcb-Ja-PrS" id="4te-yM-LZU"/>
                                             <outlet property="videoBtn" destination="tJA-pg-pKm" id="Je8-H0-vHR"/>
+                                            <segue destination="T0N-w8-iDp" kind="show" id="mRQ-d7-dHu"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -133,20 +135,31 @@
                         <viewLayoutGuide key="safeArea" id="dFG-Bh-pTd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="4kZ-Go-j6j"/>
                     <connections>
                         <outlet property="leaguesTableView" destination="R9S-i1-Bg5" id="Irt-tD-kAb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OnI-DE-zSt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3887.7862595419847" y="-1015.492957746479"/>
+            <point key="canvasLocation" x="4797.1014492753629" y="-1015.8482142857142"/>
+        </scene>
+        <!--LeaguesDetails-->
+        <scene sceneID="zje-DK-FiQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LeaguesDetailsStoryboard" referencedIdentifier="LeaguesDetails" id="T0N-w8-iDp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dmd-ub-Od2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U0b-j6-NNm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5632" y="-980"/>
         </scene>
         <!--Favourites-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController title="Favourites" id="BYZ-38-t0r" customClass="FavouritesViewController" customModule="Sports_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -187,7 +200,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="F8i-x8-kdE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="r5D-BU-51V">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <navigationBarAppearance key="standardAppearance"/>
                     </navigationBar>
@@ -199,6 +212,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIK-TG-TV0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="734" y="-371"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="loL-9W-Ky2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bpS-pd-dw3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jdv-Lj-gTI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Pzs-yc-0pe" kind="relationship" relationship="rootViewController" id="MmD-aZ-GQM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3i7-z6-IzR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3886.9565217391309" y="-1015.8482142857142"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.3980453014" green="0.49256020779999998" blue="0.53143972159999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

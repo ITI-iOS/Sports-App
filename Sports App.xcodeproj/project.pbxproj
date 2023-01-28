@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27A1EA6F2984887E00BDAA63 /* LeaguesDetailsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A1EA6E2984887E00BDAA63 /* LeaguesDetailsStoryboard.storyboard */; };
+		27A1EA712984899500BDAA63 /* LeaguesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A1EA702984899500BDAA63 /* LeaguesDetailsViewController.swift */; };
 		72DD83517B72E5B1E2382534 /* Pods_Sports_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D92F5DD4FC2F6893919E8B /* Pods_Sports_App.framework */; };
 		C56B0E370C57763339F08DB3 /* Pods_Sports_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704101E989EA41A3F23EF26B /* Pods_Sports_AppTests.framework */; };
 		DE7A7B95297C40E1000A2754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A7B94297C40E1000A2754 /* AppDelegate.swift */; };
@@ -54,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27A1EA6E2984887E00BDAA63 /* LeaguesDetailsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LeaguesDetailsStoryboard.storyboard; sourceTree = "<group>"; };
+		27A1EA702984899500BDAA63 /* LeaguesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesDetailsViewController.swift; sourceTree = "<group>"; };
 		3AEFE2E16B7F3801CC5C60E4 /* Pods-Sports App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sports App.release.xcconfig"; path = "Target Support Files/Pods-Sports App/Pods-Sports App.release.xcconfig"; sourceTree = "<group>"; };
 		3F53954BA3A4DFA88C1F6E60 /* Pods-Sports App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sports App.debug.xcconfig"; path = "Target Support Files/Pods-Sports App/Pods-Sports App.debug.xcconfig"; sourceTree = "<group>"; };
 		54D92F5DD4FC2F6893919E8B /* Pods_Sports_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sports_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +119,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27A1EA72298489C700BDAA63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A7B9A297C40E1000A2754 /* Main.storyboard */,
+				27A1EA6E2984887E00BDAA63 /* LeaguesDetailsStoryboard.storyboard */,
+				DE7A7BA2297C40E3000A2754 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		40B3C3414A86C579EBAC6E00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,13 +183,13 @@
 				DE7A7B96297C40E1000A2754 /* SceneDelegate.swift */,
 				DE7A7B98297C40E1000A2754 /* ViewController.swift */,
 				DE7A7BD5297C5E02000A2754 /* CollectionViewCell.swift */,
-				DE7A7B9A297C40E1000A2754 /* Main.storyboard */,
 				DEEF528D297D927600BAFB58 /* FavouritesViewController.swift */,
 				DE7A7BED297C870F000A2754 /* CustomLeagueTCell.swift */,
 				DE7A7BE1297C7CAF000A2754 /* LeaguesViewController.swift */,
+				27A1EA702984899500BDAA63 /* LeaguesDetailsViewController.swift */,
+				27A1EA72298489C700BDAA63 /* View */,
 				DE7A7BA0297C40E3000A2754 /* Assets.xcassets */,
 				DE7A7BC9297C4694000A2754 /* 7BZe.gif */,
-				DE7A7BA2297C40E3000A2754 /* LaunchScreen.storyboard */,
 				DE7A7BA5297C40E3000A2754 /* Info.plist */,
 				DE7A7B9D297C40E1000A2754 /* Sports_App.xcdatamodeld */,
 			);
@@ -309,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE7A7BCA297C4694000A2754 /* 7BZe.gif in Resources */,
+				27A1EA6F2984887E00BDAA63 /* LeaguesDetailsStoryboard.storyboard in Resources */,
 				DE7A7BA4297C40E3000A2754 /* LaunchScreen.storyboard in Resources */,
 				DE7A7BA1297C40E3000A2754 /* Assets.xcassets in Resources */,
 				DE7A7B9C297C40E1000A2754 /* Main.storyboard in Resources */,
@@ -446,6 +461,7 @@
 				DE7A7BEE297C870F000A2754 /* CustomLeagueTCell.swift in Sources */,
 				DE7A7B95297C40E1000A2754 /* AppDelegate.swift in Sources */,
 				DE7A7BD6297C5E02000A2754 /* CollectionViewCell.swift in Sources */,
+				27A1EA712984899500BDAA63 /* LeaguesDetailsViewController.swift in Sources */,
 				DE7A7B9F297C40E1000A2754 /* Sports_App.xcdatamodeld in Sources */,
 				DE7A7B97297C40E1000A2754 /* SceneDelegate.swift in Sources */,
 				DE7A7BE3297C7CAF000A2754 /* LeaguesViewController.swift in Sources */,
@@ -642,6 +658,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -673,6 +690,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
